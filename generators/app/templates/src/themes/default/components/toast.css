@@ -1,0 +1,16 @@
+.c-toast {
+  position: absolute;
+  z-index: 10001;
+  left: 50%;
+  top: 50%;
+  padding: dpr(32px) dpr(48px);
+  max-width: 72%;
+  min-width: rem(160px);
+  font-size: dpr(32px);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  border-radius: dpr(16px);
+  transform: translate3d(-50%, -50%, 0);
+}

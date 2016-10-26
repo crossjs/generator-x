@@ -1,0 +1,30 @@
+.c-range {
+  position: relative;
+  padding: dpr(30px);
+
+  &::before {
+    content: ' ';
+    display: block;
+    height: dpr(4px);
+    background-color: var(--placeholder);
+  }
+}
+
+.c-range-content {
+  position: relative;
+  transform: translateY(-dpr(4px));
+  height: dpr(4px);
+  background-color: var(--primary);
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: -dpr(30px);
+    right: -dpr(30px);
+    width: dpr(60px);
+    height: dpr(60px);
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+}

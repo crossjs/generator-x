@@ -1,0 +1,77 @@
+.c-button {
+  white-space: nowrap;
+  width: 100%;
+  line-height: 3;
+  color: var(--text);
+  font-size: dpr(32px);
+  background-color: white;
+  border: 1px solid var(--disabled);
+  border-radius: dpr(8px);
+
+  &:active {
+    color: color(var(--text) blackness(+15%));
+    background-color: color(white blackness(+15%));
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    color: var(--disabled);
+    background-color: white;
+  }
+
+  &.xlarge {
+    font-size: dpr(40px);
+    font-weight: bold;
+  }
+
+  &.large {
+    font-size: dpr(34px);
+  }
+
+  &.small {
+    font-size: dpr(28px);
+  }
+
+  &.xsmall {
+    font-size: dpr(24px);
+  }
+
+  &.primary {
+    color: white;
+    background-color: var(--primary);
+    border: none;
+
+    &:active {
+      color: color(white blackness(+15%));
+      background-color: color(var(--primary) blackness(+15%));
+    }
+
+    &:disabled {
+      color: var(--disabled);
+      background-color: white;
+      border: 1px solid var(--disabled);
+    }
+  }
+
+  &.warning {
+    color: white;
+    background-color: var(--warning);
+    border: none;
+
+    &:active {
+      color: color(white blackness(+15%));
+      background-color: color(var(--warning) blackness(+15%));
+    }
+
+    &:disabled {
+      color: var(--disabled);
+      background-color: white;
+      border: 1px solid var(--disabled);
+    }
+  }
+
+  /* for c-icon */
+  & i {
+    vertical-align: middle;
+  }
+}

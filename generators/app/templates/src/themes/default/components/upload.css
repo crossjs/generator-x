@@ -1,0 +1,14 @@
+.c-upload {
+  width: dpr(100px);
+  height: dpr(100px);
+  border: 1px dashed #38adff;
+  border-radius: dpr(6px);
+  position: relative;
+}
+
+.c-upload-icon {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: rgba(56, 173, 255, 0.5);
+}

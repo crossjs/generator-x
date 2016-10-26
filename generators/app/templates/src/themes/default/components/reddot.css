@@ -1,0 +1,14 @@
+.c-reddot {
+  position: relative;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    right: -dpr(6px);
+    top: -dpr(6px);
+    width: dpr(12px);
+    height: dpr(12px);
+    background-color: var(--secondary);
+    border-radius: 50%;
+  }
+}

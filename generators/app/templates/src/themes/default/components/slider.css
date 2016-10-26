@@ -1,0 +1,40 @@
+.c-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-slider-content {
+  position: relative;
+  height: 100%;
+
+  &.transition {
+    transition: transform 0.2s;
+  }
+
+  & > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.c-slider-indicators {
+  position: absolute;
+  width: 100%;
+  bottom: dpr(20px);
+  text-align: center;
+  overflow: hidden;
+}
+
+.c-slider-indicator {
+  display: inline-block;
+  margin: dpr(8px);
+  width: dpr(16px);
+  height: dpr(16px);
+  border-radius: 50%;
+  background-color: color(white alpha(0.5));
+
+  &.active {
+    background-color: white;
+  }
+}

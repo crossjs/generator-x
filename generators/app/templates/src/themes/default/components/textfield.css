@@ -1,0 +1,10 @@
+.c-textfield {
+  display: block;
+  appearance: none;
+  outline: none;
+  box-sizing: border-box;
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  height: inherit;
+}

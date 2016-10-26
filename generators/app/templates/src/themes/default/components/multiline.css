@@ -1,0 +1,11 @@
+.c-multiline {
+  color: color(black lightness(+40%));
+  outline: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: inherit;
+  resize: none;
+  display: block;
+}

@@ -1,0 +1,43 @@
+.c-link {
+  display: inline-block;
+  font-size: dpr(32px);
+  color: var(--text);
+  text-align: center;
+
+  &:active {
+    color: color(var(--primary) blackness(+15%));
+  }
+
+  &.xlarge {
+    font-size: dpr(48px);
+    font-weight: bold;
+  }
+
+  &.large {
+    font-size: dpr(40px);
+  }
+
+  &.small {
+    font-size: dpr(24px);
+  }
+
+  &.xsmall {
+    font-size: dpr(16px);
+  }
+
+  &.primary {
+    color: var(--primary);
+
+    &:active {
+      color: color(var(--primary) blackness(+15%));
+    }
+  }
+
+  &.warning {
+    color: var(--warning);
+
+    &:active {
+      color: color(var(--warning) blackness(+15%));
+    }
+  }
+}

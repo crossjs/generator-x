@@ -1,0 +1,50 @@
+.c-checkbox {
+  appearance: none;
+  outline: none;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: dpr(80px);
+  height: dpr(48px);
+  border: dpr(2px) solid color(white lightness(80%));
+  border-radius: dpr(24px);
+  background: color(white lightness(80%));
+  position: relative;
+
+  &::before,
+  &::after {
+    content: ' ';
+    background-color: white;
+    border-radius: dpr(24px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: dpr(44px);
+    transition: transform 0.5s ease;
+  }
+
+  &::before {
+    width: 100%;
+  }
+
+  /* as a dot */
+  &::after {
+    vertical-align: top;
+    width: dpr(44px);
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  &:checked {
+    border-color: var(--primary);
+    background-color: var(--primary);
+
+    &::before {
+      transform: scale3d(0, 0, 0);
+    }
+
+    &::after {
+      transform: translate3d(dpr(32px), 0, 0);
+    }
+  }
+}

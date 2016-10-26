@@ -1,0 +1,36 @@
+.c-scroller {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c-scroller-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.c-scroller-content {
+  &.transition {
+    transition: transform 0.2s linear;
+  }
+}
+
+.c-scroller-indicator {
+  position: absolute;
+  width: 100%;
+  height: dpr(80px);
+  padding: dpr(16px);
+  box-sizing: border-box;
+  text-align: center;
+
+  &-down {
+    top: -dpr(80px);
+  }
+
+  &-up {
+    bottom: -dpr(80px);
+  }
+
+  & .c-icon {
+    font-size: dpr(48px);
+  }
+}

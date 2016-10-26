@@ -1,0 +1,48 @@
+.c-tab {
+  flex: 1;
+  line-height: 2;
+  font-size: dpr(28px);
+  text-align: center;
+  border-bottom: 1px solid var(--disabled);
+
+  &:active {
+    color: color(var(--text) blackness(+15%));
+    background-color: color(white blackness(+15%));
+  }
+
+  &.checked {
+    border-bottom: dpr(4px) solid var(--primary);
+  }
+
+  &.flex {
+    flex: 1;
+  }
+}
+
+.c-tabgroup {
+  display: flex;
+
+  &.bordered {
+    border: 1px solid var(--primary);
+    border-radius: dpr(16px);
+    box-sizing: border-box;
+
+    & .c-tab {
+      box-sizing: border-box;
+      border: 1px solid var(--primary);
+
+      &:first-child {
+        border-radius: dpr(14px) 0 0 dpr(14px);
+      }
+
+      &.checked {
+        background-color: var(--primary);
+        color: white;
+      }
+
+      &:last-child {
+        border-radius: 0 dpr(14px) dpr(14px) 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+/* font-sizes */
+
+.fs-64 {
+  font-size: dpr(64px);
+}
+
+.fs-48 {
+  font-size: dpr(48px);
+}
+
+.fs-32 {
+  font-size: dpr(32px);
+}
+
+.fs-24 {
+  font-size: dpr(24px);
+}
+
+.fs-16 {
+  font-size: dpr(16px);
+}
+
+/* alignments */
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+  align-self: center;
+}
+
+.right {
+  text-align: right;
+}
+
+html[dir="rtl"] {
+  & .left {
+    text-align: right;
+  }
+
+  & .right {
+    text-align: left;
+  }
+}

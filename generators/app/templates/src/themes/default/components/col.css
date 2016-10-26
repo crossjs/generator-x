@@ -1,0 +1,17 @@
+.c-col {
+  display: block;
+  flex: 1 1 auto;
+  flex-shrink: 0;
+}
+
+.c-col-1 {
+  flex-basis: 25%;
+}
+
+.c-col-2 {
+  flex-basis: 50%;
+}
+
+.c-col-3 {
+  flex-basis: 75%;
+}

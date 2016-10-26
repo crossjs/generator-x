@@ -1,0 +1,45 @@
+.c-avatar {
+  display: inline-block;
+  width: dpr(100px);
+  height: dpr(100px);
+  font-size: dpr(50px);
+  line-height: dpr(100px);
+  text-align: center;
+  background-color: var(--placeholder);
+  overflow: hidden;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  &.large {
+    width: dpr(210px);
+    height: dpr(210px);
+    font-size: dpr(105px);
+    line-height: dpr(210px);
+  }
+
+  &.small {
+    width: dpr(80px);
+    height: dpr(80px);
+    font-size: dpr(40px);
+    line-height: dpr(80px);
+  }
+
+  &.circle {
+    border-radius: 50%;
+
+    & img {
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  &.bordered {
+    border: dpr(4px) solid white;
+    box-shadow: 0 0 dpr(4px) rgba(0, 0, 0, 0.1);
+  }
+}

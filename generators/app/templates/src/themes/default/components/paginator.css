@@ -1,0 +1,24 @@
+.c-paginator {
+  text-align: center;
+
+  & a {
+    display: inline-block;
+    padding: dpr(4px) dpr(16px);
+    color: color(white lightness(-50%));
+    text-decoration: none;
+
+    &:hover {
+      background-color: color(white lightness(-10%));
+    }
+
+    &.current {
+      background-color: color(white lightness(-10%));
+    }
+
+    &.disabled {
+      cursor: default;
+      color: color(white lightness(-30%));
+      background-color: inherit;
+    }
+  }
+}
