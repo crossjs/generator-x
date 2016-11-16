@@ -1,3 +1,5 @@
+# DEPRECATED, use [vue-cli](https://github.com/crossjs/plato#use-vue-cli) instead 
+
 # generator-x [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > a yeoman generator for plato
 
